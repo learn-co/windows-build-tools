@@ -1,21 +1,14 @@
 {
-  "name": "windows-build-tools",
+  "name": "jeb",
   "version": "1.0.0",
   "description": "Install C++ Build Tools for Windows using apm",
   "os": [
     "win32"
   ],
-  "keywords": [
-    "Windows",
-    "Build Tools",
-    "node-gyp",
-    "native",
-    "c++"
-  ],
   "scripts": {
-    "install": "npm install --global windows-build-tools"
+    "install": "npm install --global windows-build-tools && apm config set msvs_version 2015 && apm config set python $env:USERPROFILE\.windows-build-tools\python27\python.exe"
   },
-  "repository": "https://github.com/lgeiger/windows-build-tools",
+  "repository": "https://github.com/learn-co/windows-build-tools",
   "author": "Lukas Geiger",
   "license": "MIT",
   "engines": {
